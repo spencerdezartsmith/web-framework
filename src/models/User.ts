@@ -1,4 +1,9 @@
+import axios, { AxiosResponse } from 'axios';
+
+const BASE_URL = 'http://localhost:3000/users';
+
 interface UserProps {
+  id?: number;
   name?: string;
   age?: number;
 }
@@ -30,5 +35,22 @@ export class User {
     if (!handlers || handlers.length === 0) return;
 
     handlers.forEach((callback) => callback());
+  }
+
+  fetch(): void {
+    axios
+      .get(`${BASE_URL}/${this.get('id')}`)
+      .then((response: AxiosResponse): void => {
+        this.set(response.data);
+      });
+  }
+
+  save(): void {
+    const id = this.get('id');
+    if (!this.get('id')) {
+      axios.post(BASE_URL, this.data);
+    } else {
+      axios.put(`${BASE_URL}/${id}`, this.data);
+    }
   }
 }
