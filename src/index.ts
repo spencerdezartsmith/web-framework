@@ -1,4 +1,15 @@
-import { Collection } from './models/Collection';
-import { User, UserProps } from './models/User';
+import { UserForm } from './views/UserForm';
+import { User } from './models/User';
 
-const collection = User.buildUserCollection();
+const root = document.getElementById('root');
+
+if (root) {
+  const userForm = new UserForm(
+    root,
+    User.buildUser({ name: 'Alexis', age: 10 })
+  );
+
+  userForm.render();
+} else {
+  throw new Error('No root element found');
+}
