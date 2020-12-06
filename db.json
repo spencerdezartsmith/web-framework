@@ -1,74 +1,9 @@
 {
   "users": [
     {
-      "id": 1,
-      "name": "Kelly",
-      "age": 20
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 2
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 3
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 4
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 5
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 6
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 7
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 8
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 9
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 10
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 11
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 12
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 13
-    },
-    {
-      "name": "Alexis",
-      "age": 2,
-      "id": 14
+      "name": "Michael",
+      "age": 20,
+      "id": 1
     }
   ]
 }
